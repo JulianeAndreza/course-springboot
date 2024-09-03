@@ -15,19 +15,20 @@ public class User implements Serializable {
     private Long id;
     private String name;
     private String email;
-    private String password;
     private String phone;
+    private String password;
+
 
     public User() {
     }
 
-    public User(Long id, String name, String email, String password, String phone) {
+    public User(Long id, String name, String email, String phone, String password) {
         super();
         this.id = id;
         this.name = name;
         this.email = email;
-        this.password = password;
         this.phone = phone;
+        this.password = password;
     }
 
     public Long getId() {
